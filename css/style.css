@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900');
 @import url('https://fonts.googleapis.com/css?family=Clicker+Script');
 
+h3 {
+  margin: 0 0 10px;
+}
+
 p {
   font-size: 1em; /* 16px, ?pt, 100%, 1em */
   line-height: 1.5em;
+}
+
+figure {
+  margin: 0 0 10px;
 }
 
 figcaption {
@@ -22,7 +30,8 @@ figcaption {
 
 /*//////// MEDIA ///////*/
 
-img, video, audio {
+img, video, audio, iframe, table, form {
+  width: 100%;
   max-width: 100%;
 }
 
@@ -82,7 +91,7 @@ img, video, audio {
 
 #social {
   position: fixed;
-  top: 200px;
+  top: 185px;
   right: 20px;
   width: 40px;
   z-index: 1;
@@ -112,11 +121,15 @@ img, video, audio {
 /*////////// MAIN SECTIONS //////////*/
 
 section {
-  padding: 30px;
+  padding: 20px;
   margin-bottom: 20px;
 }
 
 /*////////// DETAILS //////////*/
+
+#details div {
+  height: 221px;
+}
 
 #details a:link, #details a:visited {
   color: black;
